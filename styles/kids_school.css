@@ -109,6 +109,7 @@ nav  ul  li a{
 
 .empowering{
     margin: 1.25rem 10vw;
+    margin-bottom: 0px;
     gap: 50px;
     justify-content: space-between;
 }
@@ -146,10 +147,145 @@ nav  ul  li a{
     width: min-content;
     padding: 0px 0px 0px 0px;
 }
-#mobile-hide{
+.mobile-hide{
     display: inline;
 }
 
+/* curriculum section  styles*/
+.curriculum{
+    background-image: url(/assets/bg.png);
+    padding: 60px 0px;
+}
+.curriculum-title{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 57.5px;
+    color: black;
+}
+.card{
+    width: 80vw;
+    margin: 80px 10vw;
+    gap: 28px;
+}
+.card-container{
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.15rem;
+}
+.card-img{
+    height: 136px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+    line-height: 30px;
+    margin: 2rem auto;
+
+}
+.card-description{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #808080;
+    margin: 0px 2.5rem;
+
+
+}
+.bg-blue{
+    bottom: 1px solid rgba(222, 245, 255, 1);
+    background: linear-gradient(to bottom,rgba(222, 245, 255, 1),transparent 50%);
+}
+.bg-orange{
+    border: 1px solid rgba(255, 244, 220, 1);
+    background: linear-gradient(to bottom,rgba(255, 244, 220, 1),transparent 50%);
+}
+.bg-purple{
+    border: 1px solid rgba(242, 232, 255, 1);
+    background: linear-gradient(to bottom,rgba(242, 232, 255, 1),transparent 50%);
+}
+
+.arrow-icon-container{
+    justify-content: center;
+    align-items: center;
+}
+.card-btn{
+    font-size: 1rem;
+    padding: 10px 30px 10px 0px;
+    font-weight: bold;
+    line-height: 1.5rem;
+    background-color:white ;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border: none;
+    
+}
+#blue-btn{
+    color: #64C8FF;
+}
+#orange-btn{
+ color: #F0AA00;
+
+}
+#purple-btn{
+    color: #8700FF;
+}
+.arrow-icon-container{
+    gap: 10px;
+}
+.arrow-btn{
+    background-color: orange;
+    border-radius: 50%;
+}
+.left-arrow{
+    height: 64px;
+}
+
+/* our story styles */
+
+.stories{
+    width: 100vw;
+    background: 
+    linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF,transparent 150%), /* Gradient */
+    url(/assets/bg.png); 
+    padding: 60px 0px;
+}
+.story-title-main{
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 57px;
+    color: black;
+    text-align: center;
+}
+.story-content-container{
+    width: 80vw;
+    margin: 80px 10vw;
+    gap: 20px;
+}
+.first-column {
+    background-color: #FFFFFF;
+    border-radius: 16px 16px 16px 16px;
+}
+.story-img{
+    height: 50%;
+    width: 100%;
+    border-radius: 16px 16px 0px 0px ;
+}
+.first-column{
+    flex-direction: column;
+}
+.story-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    
+
+}
+.story-grid-card{
+   border-radius: 16px;
+}
 
 
 /* styles for mobile device */
@@ -184,10 +320,11 @@ nav  ul  li a{
   }
   /* empowering styles for small device  */
   .empowering{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column-reverse;
-    margin: 20px 10px;
+    margin: 20px 0px;
+    height: auto;
   }
   .empowering-img{
     width: 80vw;
@@ -200,26 +337,71 @@ nav  ul  li a{
     flex-direction: column;
     align-items: center;
     padding: 0px ;
+    height: auto;
 
   }
   .empowering-title{
     font-size: 2rem;
+    line-height: auto;
+    text-align: center;
   }
   .empowering-description{
     font-size: 0.87rem;
     line-height: auto;
-    height: 10vw;
-    line-break: none;
-
-    margin: 18px 2rem;
     text-align: center;
 
   }
-  #mobile-hide{
+  .mobile-hide{
+    display: none;
+  }
+  /* curriculum section  styles for mobile device*/
+
+  .curriculum{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 2.5rem 0px 0px;
+
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem auto;
+  }
+  .curriculum-title{
+    font-size: 1.5rem;
+    line-height: auto;
+
+  }
+  .card-container{
+    padding: 2.25rem 1.75rem;
+
+  }
+  .card-img{
+    height: 75px;
+    width: 88px;
+  }
+  .card-title{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 1.6rem 0;
+  }
+  .card-description{
+    font-size: 0.62rem;
+    line-height: 1.25rem;
+    margin-bottom: 1.6rem;
+  }
+  .card-btn{
+    margin: 0 auto;
+  }
+  .arrow-icon-container{
     display: none;
   }
 
 }
-*{
+/* *{
     border: 1px solid black;
-}
+} */

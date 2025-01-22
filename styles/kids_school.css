@@ -348,9 +348,10 @@ nav  ul  li a{
 .footer{
     width: 100vw;
     background-color: #01ACFD;
+    border: 1px solid #01ACFD;
 }
 .footer-container {
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80vw;
     margin: 150px 10vw;
 
@@ -372,6 +373,7 @@ nav  ul  li a{
     font-weight: 300;
     line-height: auto;
     color: white;
+    margin-top: 2rem;
 
 }
 .footer-column,
@@ -379,11 +381,33 @@ nav  ul  li a{
     flex-direction: column;
     gap: 20px;
 }
+.footer-items{
+    margin-top: 2rem;
+}
+.footer-list-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: auto;
+    color: white;
+}
 .footer-item{
     text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    line-height: auto;
+
 }
 .footer-list{
     list-style: none;
+}
+.social-container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 10px;
+
+}
+.social-icons{
+    height: 36px;
 }
 
 /* styles for mobile device */
@@ -499,7 +523,58 @@ nav  ul  li a{
     display: none;
   }
 
+  /* our stories responsive for mobile device */
+  .stories{
+    width: 100vw;
+    padding: 2.5rem 0px 0px;
+  }
+  .first-column{
+    display: none;
+  }
+  .story-title-main{
+    font-size: 1.75rem;
+    line-height: 57px;
+  }
+  .story-content-container{
+    width: 94vw;
+    margin: 1.25rem 3vw;
+  }
+  .story-card-btn{
+    border-radius: 38px;
+    padding: 10px 25px;
+    font-size: 0.7rem;
+    line-height: auto;
+    margin-top: -50%;
+    margin-left: 2vw;
+    }
+    .story-title{
+        font-size: 10px;
+        line-height: 17px;
+        text-align: start;
+        margin-top: 0;
+    }
+
+  /* footer for smaller device */
+
+  .footer{
+    width: 100vw;
+    padding: 0;
+  }
+  .footer-container{
+    width: 90vw;
+    margin: 40px 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-column {
+    margin: 2rem 0 0;
+  }
+  .footer-list-title{
+    margin-top: 27px;
+  }
+  .footer-items{
+    margin: 0;
+  }
+
 }
-/* *{
-    border: 1px solid black;
-} */
+

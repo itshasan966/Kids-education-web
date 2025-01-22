@@ -406,6 +406,27 @@ nav  ul  li a{
     gap: 10px;
 
 }
+.marquee{
+    width: 100%;
+    background-color: white;
+    text-transform: lowercase;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.marquee div{
+    font-size: 2rem;
+    font-family: "Quicksand", serif;
+    animation: markquee 10s linear infinite ;
+    padding-left: 100%;
+    display: inline-block;
+    color: #01ACFD;
+}
+@keyframes markquee{
+    100%{
+        transform: translate(-100%,0);
+    }
+}
 .social-icons{
     height: 36px;
 }
